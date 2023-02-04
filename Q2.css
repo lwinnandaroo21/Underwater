@@ -1,0 +1,187 @@
+*{
+  overflow: hidden;
+}
+body {
+  background-image: url(./underwater.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+
+.sign {
+  width: 100px;
+  height: 30px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+}
+.sign:hover {
+  background-color: rgb(53, 187, 232);
+}
+.signin {
+  direction: rtl;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.tex {
+  margin-top: 80px;
+  margin-left: 100px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 500px;
+  /* height: 200px; */
+  color: white;
+  text-shadow: 1px 1px 2px rgb(87, 97, 239), 0px 0px 25px white,
+    0px 0px 5px rgb(98, 172, 237);
+}
+.title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 80px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.diving {
+  font-size: 15px;
+}
+
+.mainbtn {
+  margin-left: 40%;
+}
+.btn {
+  width: 350px;
+  height: 40px;
+  text-align: center;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: rgb(53, 187, 232);
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateY(0);
+    left: -10%;
+  }
+  20% {
+    transform: translateY(80px) rotate(-20deg);
+  }
+  40% {
+    transform: translateY(0px) rotate(-10deg);
+  }
+  60% {
+    transform: translateY(80px) rotate(0deg);
+  }
+  80% {
+    transform: translateY(0px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(80px);
+    left: 120%;
+  }
+}
+
+.fish {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  
+  position: absolute;
+}
+img {
+  width: 100%;
+}
+.f1 {
+  top: 20px;
+  animation-delay: 0s;
+  animation: slidein 6s linear infinite reverse;
+}
+.f2 {
+  top: 100px;
+  /* animation-delay: 10s; */
+  animation: slidein 9s linear infinite reverse;
+}
+.f3 {
+  top: 200px;
+  /* animation-delay: 15s; */
+  animation: slidein 7s linear infinite reverse;
+}
+.f4 {
+  top: 300px;
+  /* animation-delay: 30s; */
+  animation: slidein 8s linear infinite reverse;
+}
+
+.block {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: move 8s linear infinite normal;
+  position: absolute;
+}
+
+@keyframes move {
+  0% {
+    bottom: 0;
+    opacity: 1;
+  }
+  50% {
+    bottom: 200px;
+  }
+  100% {
+    bottom: 500px;
+    opacity: 0;
+  }
+}
+img {
+  width: 100%;
+}
+
+.b1 {
+  animation-delay: 0s;
+  margin-left: 20px;
+}
+.b2 {
+  animation-delay: 5s;
+  margin-left: 100px;
+}
+.b3 {
+  animation-delay: 10s;
+  margin-left: 200px;
+}
+.b4 {
+  animation-delay: 0s;
+  margin-left: 400px;
+}
+.b5 {
+  animation-delay: 5s;
+  margin-left: 600px;
+}
+.b6 {
+  animation-delay: 10s;
+  margin-left: 800px;
+}
+.b7 {
+  animation-delay: 0s;
+  margin-left: 1000px;
+}
+.b8 {
+  animation-delay: 5s;
+  margin-left: 1100px;
+}
+
+
